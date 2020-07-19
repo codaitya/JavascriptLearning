@@ -245,6 +245,7 @@ if(!gameOver){
 
 
 function GameLoop() {
+  //Your callback routine must itself call requestAnimationFrame() if you want to animate another frame at the next repaint.
   Update();
   Draw();
   if (!gameOver)
